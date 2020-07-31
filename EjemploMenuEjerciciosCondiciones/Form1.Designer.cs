@@ -30,8 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pb1 = new System.Windows.Forms.PictureBox();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pb2 = new System.Windows.Forms.PictureBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +58,37 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Identifica el mayor de 2 números";
             // 
+            // btnsalir
+            // 
+            this.btnsalir.Location = new System.Drawing.Point(327, 390);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(132, 48);
+            this.btnsalir.TabIndex = 4;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(248, 267);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(443, 25);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Identifica si un número es positivo o negativo";
+            // 
+            // pb2
+            // 
+            this.pb2.Image = global::EjemploMenuEjerciciosCondiciones.Properties.Resources._2;
+            this.pb2.Location = new System.Drawing.Point(142, 223);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(100, 109);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb2.TabIndex = 5;
+            this.pb2.TabStop = false;
+            this.pb2.Click += new System.EventHandler(this.pb2_Click);
+            // 
             // pb1
             // 
             this.pb1.Image = global::EjemploMenuEjerciciosCondiciones.Properties.Resources.unnamed;
@@ -66,22 +100,14 @@
             this.pb1.TabStop = false;
             this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
-            // btnsalir
-            // 
-            this.btnsalir.Location = new System.Drawing.Point(327, 390);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(132, 48);
-            this.btnsalir.TabIndex = 4;
-            this.btnsalir.Text = "Salir";
-            this.btnsalir.UseVisualStyleBackColor = true;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pb2);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pb1);
@@ -89,6 +115,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,6 +128,8 @@
         private System.Windows.Forms.PictureBox pb1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.PictureBox pb2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
